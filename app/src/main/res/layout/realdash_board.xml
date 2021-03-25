@@ -56,4 +56,14 @@
         android:layout_weight="1"
         android:orientation="vertical" />
 
+    <Button
+        android:id="@+id/buttonl"
+        android:layout_width="147dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:text="Logout"
+        android:textColor="#000000"
+        android:textSize="26dp"/>
+
 </LinearLayout>

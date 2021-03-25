@@ -1,8 +1,7 @@
-package com.example;
+package com.example.androidproject;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.androidproject.R;
 
 
 public class theAdapter extends RecyclerView.Adapter<theAdapter.theViewHolder> {
