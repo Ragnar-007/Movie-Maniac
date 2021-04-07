@@ -7,7 +7,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,10 +24,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView SignUpTv;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         firebaseAuth=firebaseAuth.getInstance();
         emailEt=findViewById(R.id.email);
         passwordEt=findViewById(R.id.password);
@@ -50,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
     private void Login(){
         String email=emailEt.getText().toString();
         String password=passwordEt.getText().toString();
@@ -69,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(MainActivity.this,realdashboard.class);
+                    Intent intent=new Intent(MainActivity.this,mainclass.class);
                     startActivity(intent);
                     finish();
                 }

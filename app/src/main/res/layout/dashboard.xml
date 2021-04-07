@@ -4,13 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Click here to logout"
         android:textColor="#0277BD"
-        android:text="This is My Dashboard"
-        android:textSize="40dp"
-        />
+        android:textSize="40dp" />
     <Button
         android:id="@+id/logout"
         android:layout_width="200dp"
